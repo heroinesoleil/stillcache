@@ -1,0 +1,68 @@
+/* Set a global font family */
+body {
+    font-family: 'Helvetica', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+h1 {
+    font-size: 5rem;
+    font-weight: 50;
+    margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
+    line-height: 1;     /* Adjust line height for tighter text */
+    margin: 0;
+}
+
+.directed {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+}
+
+.details {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300; /* or 400, or whatever you loaded */
+}
+
+header {
+	margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-weight: 50;
+    margin-bottom: 50px;  /* Adjust the bottom margin to reduce space */
+    line-height: 1;     /* Adjust line height for tighter text */
+    margin: 0;
+}
+
+
+.film-info {
+    margin-top: 0;       /* Ensure there's no extra space above the .film-info */
+    margin-bottom: 20px; /* Adjust bottom margin if needed */
+    font-weight: 50;
+}
+
+.film-text h1 {
+	margin-bottom: 20px;
+}
+
+.film-text p {
+    font-size: 4em;
+    margin: 0;
+    line-height: 1;     /* Adjust line height for tighter text */
+}
+
+.film-images {
+    margin-top: 20px;
+}
+
+.film-images img {
+    width: 100%; /* Ensure the image stretches to full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+}
