@@ -9,15 +9,16 @@ body {
     margin-right: 50px;
 }
 
-
+/* Header (h1) scaling with vw and clamp */
 h1 {
-    font-size: 5rem;
+    font-size: clamp(3rem, 8vw, 6rem); /* Scale between 3rem and 6rem based on viewport width */
     font-weight: 50;
     margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
     line-height: 1;     /* Adjust line height for tighter text */
     margin: 0;
 }
 
+/* Directed and Details text with IBM Plex Mono font */
 .directed {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
@@ -28,35 +29,38 @@ h1 {
   font-weight: 300; /* or 400, or whatever you loaded */
 }
 
+/* Header Section */
 header {
 	margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 5rem;
+    font-size: clamp(3rem, 8vw, 6rem);  /* Apply same scaling here */
     font-weight: 50;
     margin-bottom: 50px;  /* Adjust the bottom margin to reduce space */
     line-height: 1;     /* Adjust line height for tighter text */
     margin: 0;
 }
 
-
+/* Film-info Section */
 .film-info {
     margin-top: 0;       /* Ensure there's no extra space above the .film-info */
     margin-bottom: 20px; /* Adjust bottom margin if needed */
     font-weight: 50;
 }
 
+/* Film-text and Paragraph styling */
 .film-text h1 {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .film-text p {
-    font-size: 4em;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Scaling the paragraph font size for responsiveness */
     margin: 0;
     line-height: 1;     /* Adjust line height for tighter text */
 }
 
+/* Film Images Section */
 .film-images {
     margin-top: 20px;
 }
