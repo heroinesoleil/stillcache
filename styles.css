@@ -135,6 +135,5 @@ body.dark-mode .toggle-label::before {
 }
 
 body.dark-mode .film-images img {
-    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
