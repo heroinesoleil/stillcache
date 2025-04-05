@@ -55,7 +55,7 @@ header h1 {
 }
 
 .film-text p {
-    font-size: clamp(3rem, 8vw, 6rem); /* Scaling the paragraph font size for responsiveness */
+    font-size: clamp(2rem, 4vw, 2.5rem); /* Scaling the paragraph font size for responsiveness */
     margin: 0;
     line-height: 1;     /* Adjust line height for tighter text */
 }
