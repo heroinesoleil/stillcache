@@ -7,79 +7,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stillcache</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-	<!-- PNG favicon for modern browsers -->
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<!-- Apple Touch Icon (iOS home screen) -->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- PNG favicon for modern browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-	</head>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
-	<header>
+    <header>
         <h1>stillcache</h1>
+        <!-- Light/Dark Mode Toggle -->
+        <div class="toggle-container">
+            <input type="checkbox" id="mode-toggle" class="mode-toggle" />
+            <label for="mode-toggle" class="toggle-label"></label>
+        </div>
     </header>
-    
+
     <section class="film-info">
-    
-    <div class="film-text">
-    	<h2>Kiki's Delivery Service (1989)</h2>
-    	<p class="directed">Directed by Hayao Miyazaki</p>
-    	<p class="details">U ‧ 1989 ‧ Family/Fantasy ‧ 1h 42m</p>
-	</div>
-    
-    <div class="film-images">
-        <img src="images/kiki-title-card.png" alt="Kiki's Delivery Service Title Card'">
-        <img src="images/kiki-001.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-002.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-003.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-004.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-005.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-006.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-007.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-008.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-009.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-010.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-011.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-012.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-013.png" alt="Kiki's Delivery Service">
-        <img src="images/kiki-014.png" alt="Kiki's Delivery Service">
-    </div>
-	</section>
-	
-	<section class="film-info">
-    
-    <div class="film-text">
-    	<h2>House (1977)</h2>
-    	<p class="directed">Directed by	Nobuhiko Obayashi</p>
-    	<p class="details">15 ‧ 1977 ‧ Horror/Fantasy ‧ 1h 28m</p>
-	</div>
-    
-    <div class="film-images">
-        <img src="images/house-title-card.png" alt="House (1977) Title Card">
-        <img src="images/house-001.png" alt="House (1977)">
-        <img src="images/house-002.png" alt="House (1977)">
-        <img src="images/house-003.png" alt="House (1977)">
-        <img src="images/house-004.png" alt="House (1977)">
-        <img src="images/house-005.png" alt="House (1977)">
-        <img src="images/house-006.png" alt="House (1977)">
-        <img src="images/house-007.png" alt="House (1977)">
-        <img src="images/house-008.png" alt="House (1977)">
-        <img src="images/house-009.png" alt="House (1977)">
-        <img src="images/house-010.png" alt="House (1977)">
-        <img src="images/house-011.png" alt="House (1977)">
-         <img src="images/house-012.png" alt="House (1977)">
-    </div>
-	</section>
+        <div class="film-text">
+            <h2>Kiki's Delivery Service (1989)</h2>
+            <p class="directed">Directed by Hayao Miyazaki</p>
+            <p class="details">U ‧ 1989 ‧ Family/Fantasy ‧ 1h 42m</p>
+        </div>
 
+        <div class="film-images">
+            <img src="images/kiki-title-card.png" alt="Kiki's Delivery Service Title Card'">
+            <img src="images/kiki-001.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-002.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-003.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-004.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-005.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-006.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-007.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-008.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-009.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-010.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-011.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-012.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-013.png" alt="Kiki's Delivery Service">
+            <img src="images/kiki-014.png" alt="Kiki's Delivery Service">
+        </div>
+    </section>
 
+    <section class="film-info">
+        <div class="film-text">
+            <h2>House (1977)</h2>
+            <p class="directed">Directed by Nobuhiko Obayashi</p>
+            <p class="details">15 ‧ 1977 ‧ Horror/Fantasy ‧ 1h 28m</p>
+        </div>
+
+        <div class="film-images">
+            <img src="images/house-title-card.png" alt="House (1977) Title Card">
+            <img src="images/house-001.png" alt="House (1977)">
+            <img src="images/house-002.png" alt="House (1977)">
+            <img src="images/house-003.png" alt="House (1977)">
+            <img src="images/house-004.png" alt="House (1977)">
+            <img src="images/house-005.png" alt="House (1977)">
+            <img src="images/house-006.png" alt="House (1977)">
+            <img src="images/house-007.png" alt="House (1977)">
+            <img src="images/house-008.png" alt="House (1977)">
+            <img src="images/house-009.png" alt="House (1977)">
+            <img src="images/house-010.png" alt="House (1977)">
+            <img src="images/house-011.png" alt="House (1977)">
+            <img src="images/house-012.png" alt="House (1977)">
+        </div>
+    </section>
 
     <footer>
-        <!-- Footer content -->
         <p>©2025 Stillcache</p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById("mode-toggle");
+
+        // Check for stored theme preference
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+            toggle.checked = true;
+        }
+
+        // Toggle dark/light mode
+        toggle.addEventListener("change", () => {
+            if (toggle.checked) {
+                document.body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.body.classList.remove("dark-mode");
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
 
 </body>
 
