@@ -21,44 +21,35 @@ h1 {
 
     - To make the font scale more aggressively: increase the vw value
     - To prevent the text from getting too small or too big: adjust the min and max rem values
-*/
-
+    */
     font-weight: 50;
-    margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
     line-height: 1;     /* Adjust line height for tighter text */
-    margin: 0;
+    margin: 0 0 10px 0; /* Combines margin-bottom and resets others */
 }
 
 h2 {
     font-size: clamp(1.5rem, 4vw, 1.5rem);
     font-weight: 50;
-    margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
-    line-height: 1;     /* Adjust line height for tighter text */
-    margin: 0;
+    line-height: 1;
+    margin: 0 0 10px 0;
 }
-
 
 /* Directed and Details text with IBM Plex Mono font */
-.directed {
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 300;
-}
-
+.directed,
 .details {
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 300; /* or 400, or whatever you loaded */
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300; /* or 400, or whatever you loaded */
 }
 
 /* Header Section */
 header {
-	margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 header h1 {
     font-weight: 50;
-    margin-bottom: 50px;  /* Adjust the bottom margin to reduce space */
-    line-height: 1.2;     /* Adjust line height for tighter text */
-    margin: 0;
+    line-height: 1.2;
+    margin: 0 0 0 0;
 }
 
 /* Film-info Section */
@@ -75,8 +66,8 @@ header h1 {
 
 .film-text p {
     font-size: clamp(1.5rem, 4vw, 1.5rem); /* Scaling the paragraph font size for responsiveness */
+    line-height: 1.2;
     margin: 0;
-    line-height: 1.2;     /* Adjust line height for tighter text */
 }
 
 /* Film Images Section */
@@ -85,7 +76,7 @@ header h1 {
 }
 
 .film-images img {
-    width: 100%; /* Ensure the image stretches to full width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;       /* Ensure the image stretches to full width */
+    height: auto;      /* Maintain aspect ratio */
     margin-bottom: 20px; /* Space between images */
 }
