@@ -11,12 +11,32 @@ body {
 
 /* Header (h1) scaling with vw and clamp */
 h1 {
-    font-size: clamp(3rem, 8vw, 6rem); /* Scale between 3rem and 6rem based on viewport width */
+    font-size: clamp(2rem, 8vw, 2rem);  /* 
+    
+    clamp(MIN, PREFERRED, MAX)
+
+    3rem    = Minimum font size (never gets smaller than this)
+    8vw     = Preferred size that scales with screen width (responsive)
+    6rem    = Maximum font size (never gets bigger than this)
+
+    - To make the font scale more aggressively: increase the vw value
+    - To prevent the text from getting too small or too big: adjust the min and max rem values
+*/
+
     font-weight: 50;
     margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
     line-height: 1;     /* Adjust line height for tighter text */
     margin: 0;
 }
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 1.5rem);
+    font-weight: 50;
+    margin-bottom: 10px;  /* Adjust the bottom margin to reduce space */
+    line-height: 1;     /* Adjust line height for tighter text */
+    margin: 0;
+}
+
 
 /* Directed and Details text with IBM Plex Mono font */
 .directed {
@@ -31,14 +51,13 @@ h1 {
 
 /* Header Section */
 header {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
 header h1 {
-    font-size: clamp(3rem, 8vw, 6rem);  /* Apply same scaling here */
     font-weight: 50;
     margin-bottom: 50px;  /* Adjust the bottom margin to reduce space */
-    line-height: 1;     /* Adjust line height for tighter text */
+    line-height: 1.2;     /* Adjust line height for tighter text */
     margin: 0;
 }
 
@@ -55,9 +74,9 @@ header h1 {
 }
 
 .film-text p {
-    font-size: clamp(2rem, 4vw, 2.5rem); /* Scaling the paragraph font size for responsiveness */
+    font-size: clamp(1.5rem, 4vw, 1.5rem); /* Scaling the paragraph font size for responsiveness */
     margin: 0;
-    line-height: 1;     /* Adjust line height for tighter text */
+    line-height: 1.2;     /* Adjust line height for tighter text */
 }
 
 /* Film Images Section */
