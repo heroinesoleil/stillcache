@@ -7,24 +7,15 @@ body {
     margin-top: 25px;
     margin-left: 30px;
     margin-right: 30px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
 }
 
 /* Header (h1) scaling with vw and clamp */
 h1 {
-    font-size: clamp(2rem, 8vw, 2rem);  /* 
-    
-    clamp(MIN, PREFERRED, MAX)
-
-    3rem    = Minimum font size (never gets smaller than this)
-    8vw     = Preferred size that scales with screen width (responsive)
-    6rem    = Maximum font size (never gets bigger than this)
-
-    - To make the font scale more aggressively: increase the vw value
-    - To prevent the text from getting too small or too big: adjust the min and max rem values
-    */
+    font-size: clamp(2rem, 8vw, 2rem);
     font-weight: 50;
-    line-height: 1;     /* Adjust line height for tighter text */
-    margin: 0 0 0 0; /* Combines margin-bottom and resets others */
+    line-height: 1;
+    margin: 0 0 0 0;
 }
 
 h2 {
@@ -54,8 +45,8 @@ header h1 {
 
 /* Film-info Section */
 .film-info {
-    margin-top: 0;       /* Ensure there's no extra space above the .film-info */
-    margin-bottom: 20px; /* Adjust bottom margin if needed */
+    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 50;
 }
 
@@ -65,7 +56,7 @@ header h1 {
 }
 
 .film-text p {
-    font-size: clamp(1.5rem, 4vw, 1.5rem); /* Scaling the paragraph font size for responsiveness */
+    font-size: clamp(1.5rem, 4vw, 1.5rem);
     line-height: 1.2;
     margin: 0;
 }
@@ -76,7 +67,74 @@ header h1 {
 }
 
 .film-images img {
-    width: 100%;       /* Ensure the image stretches to full width */
-    height: auto;      /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space between images */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Light/Dark Mode Toggle */
+.toggle-container {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.mode-toggle {
+    display: none;
+}
+
+.toggle-label {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.mode-toggle:checked + .toggle-label {
+    background-color: #333;
+}
+
+.mode-toggle:checked + .toggle-label::before {
+    transform: translateX(20px);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .film-text h2,
+body.dark-mode .film-text p {
+    color: #ffffff;
+}
+
+body.dark-mode .toggle-label {
+    background-color: #333;
+}
+
+body.dark-mode .toggle-label::before {
+    background-color: #fff;
+}
+
+body.dark-mode .film-images img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
