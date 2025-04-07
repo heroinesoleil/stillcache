@@ -113,7 +113,7 @@ header h1 {
 
 /* Light/Dark Mode Toggle */
 .toggle-container {
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 30px;
     display: flex;
